@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tetris desarrollado por Juan Carlos con JavaScript.">
+  <link rel="icon" type="image/svg+xml" href="tetris-icon.svg">
+  <title>Tetris | JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-icon" src="tetris-icon.svg" alt="">
+        <h1>Tetris</h1>
+      </div>
+      <button id="language-toggle" class="language-button" type="button" aria-label="Cambiar a inglés">EN</button>
+    </header>
+
+    <section class="game-layout" aria-label="Juego de Tetris" data-i18n-attr="aria-label:gameAreaLabel">
+      <div class="board-wrap">
+        <canvas id="board" width="300" height="600" aria-label="Tablero de Tetris" data-i18n-attr="aria-label:boardLabel"></canvas>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+      </div>
+
+      <aside class="sidebar">
+        <button id="restart" class="primary-button" type="button" data-i18n="newGame">Nueva partida</button>
+        <div class="panel preview-panel">
+          <p class="panel-label" data-i18n="nextPiece">Siguiente pieza</p>
+          <canvas id="next" width="120" height="120" aria-label="Vista previa de la siguiente pieza" data-i18n-attr="aria-label:nextLabel"></canvas>
+          <p class="controls">← → <span data-i18n="move">mover</span><br>↓ <span data-i18n="drop">acelerar</span><br>↑ <span data-i18n="rotate">rotar</span><br><kbd>P</kbd> <span data-i18n="pause">pausa</span></p>
+        </div>
+        <div class="stats">
+          <div><span data-i18n="score">Puntuación</span><strong id="score">0</strong></div>
+          <div><span data-i18n="lines">Líneas</span><strong id="lines">0</strong></div>
+          <div><span data-i18n="level">Nivel</span><strong id="level">1</strong></div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="mobile-controls" aria-label="Controles táctiles" data-i18n-attr="aria-label:touchControls">
+      <button type="button" data-action="left" aria-label="Mover a la izquierda" data-i18n-attr="aria-label:left">←</button>
+      <button type="button" data-action="down" aria-label="Bajar pieza" data-i18n-attr="aria-label:down">↓</button>
+      <button type="button" data-action="rotate" aria-label="Rotar pieza" data-i18n-attr="aria-label:rotate">↻</button>
+      <button type="button" data-action="right" aria-label="Mover a la derecha" data-i18n-attr="aria-label:right">→</button>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-identity">
+        <strong>Juan Carlos</strong>
+        <span data-i18n="footerRole">Fullstack Developer</span>
+      </div>
+      <div class="footer-socials" aria-label="Redes sociales" data-i18n-attr="aria-label:footerSocials">
+        <a href="https://wa.me/1158094982" aria-label="WhatsApp" data-i18n-attr="aria-label:whatsapp">WA</a>
+        <a href="https://github.com/jciasenza" aria-label="GitHub" data-i18n-attr="aria-label:github">GH</a>
+        <a href="https://www.linkedin.com/in/juan-carlos-iasenza-8119501a9/" aria-label="LinkedIn" data-i18n-attr="aria-label:linkedin">in</a>
+        <a href="mailto:iasenzajuancarlos@gmail.com" aria-label="Correo electrónico" data-i18n-attr="aria-label:email">@</a>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="copyright">© 2026 Juan Carlos. Todos los derechos reservados.</span>
+        <span class="built-with"><i></i><span data-i18n="builtWith">Built with JavaScript &amp; CSS</span></span>
+      </div>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
