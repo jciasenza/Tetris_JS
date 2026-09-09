@@ -34,7 +34,7 @@ No requiere instalacion de dependencias ni servidor de desarrollo.
 1. Clona el repositorio:
 
    ```bash
-   git clone URL_DE_TU_REPOSITORIO
+   https://github.com/jciasenza/Tetris_JS.git
    ```
 
 2. Abre la carpeta del proyecto.
