@@ -15,7 +15,10 @@
         <img class="brand-icon" src="tetris-icon.svg" alt="">
         <h1>Tetris</h1>
       </div>
-      <button id="language-toggle" class="language-button" type="button" aria-label="Cambiar a inglés">EN</button>
+      <div class="header-actions">
+        <button id="restart" class="primary-button" type="button" data-i18n="newGame">Nueva partida</button>
+        <button id="language-toggle" class="language-button" type="button" aria-label="Cambiar a inglés">EN</button>
+      </div>
     </header>
 
     <section class="game-layout" aria-label="Juego de Tetris" data-i18n-attr="aria-label:gameAreaLabel">
@@ -31,7 +34,6 @@
           <button type="button" data-action="rotate" aria-label="Rotar pieza" data-i18n-attr="aria-label:rotate">↻</button>
           <button type="button" data-action="right" aria-label="Mover a la derecha" data-i18n-attr="aria-label:right">→</button>
         </div>
-        <button id="restart" class="primary-button" type="button" data-i18n="newGame">Nueva partida</button>
         <div class="panel preview-panel">
           <p class="panel-label" data-i18n="nextPiece">Siguiente pieza</p>
           <canvas id="next" width="120" height="120" aria-label="Vista previa de la siguiente pieza" data-i18n-attr="aria-label:nextLabel"></canvas>

@@ -58,6 +58,12 @@ body::after {
   margin-bottom: 14px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -369,6 +375,18 @@ kbd {
 
   .topbar {
     align-items: start;
+    gap: 10px;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .header-actions .primary-button {
+    min-height: 36px;
+    padding: 7px 9px;
+    font-size: 10px;
+    white-space: nowrap;
   }
 
   .source-link {
