@@ -407,14 +407,20 @@ kbd {
   }
 
   .preview-panel .controls {
-    flex-basis: 100%;
-    margin-top: -8px;
+    display: none;
   }
+
+  .stats {
+    grid-column: span 2;
+  }
+
   .mobile-controls {
     display: grid;
+    grid-column: span 2;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    max-width: 360px;
+    width: 100%;
+    max-width: none;
     margin: 14px auto 0;
   }
 
